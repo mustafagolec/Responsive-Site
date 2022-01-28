@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+#maintext{
+    font-size: 5rem;
+}
+#mainicon{
+    font-size: 2.5rem;
+}
+
+html{
+    font-size : 7px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #333;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#clicktoexpand{
+    text-decoration: none;
+    color: rgb(66, 124, 151);
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+header{
+    height: 46rem;
+}
+header .bg-image{
+    position:absolute;
+    background-image: url(gorseller/main.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 46rem;
+    width:100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display: inline-block;
+    background:#333;
+    color: #fff;
+    border: 1px solid #666;
+    padding:1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background-color: rgb(67, 87, 100);
+    color: rgb(121, 201, 255);
+
+}
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding :3.2rem 0;
+}
+
+#section-b{
+    padding:2rem;
+
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background: #fff;
+    color:#333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding:1.5rem;
+}
+
+#section-c{
+    background-color: #eaeaea;
+    color: #333;
+    padding:5rem;
+}
+
+#section-d .box{
+    padding:5rem;
+}
+
+#section-d .box:first-child{
+    background-color: darkslategray;
+}
+
+footer{
+    padding: 4rem;
+    background: black;
+
+}
+
+footer a {
+    color:yellowgreen;
+}
+
+@media screen and (min-width:800px) {
+
+    html{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    html{
+        font-size: 11px;
+    }
+
+    #section-b li {
+        width:28%;
+        margin:1%;
+        display:inline-block;
+
+    }
+    .box{
+        width:50%;
+        float:left;
+    }
+
+}
+
+
+#photos:hover{
+    background-color: #fff;
+    color: #333;
+    opacity: 0.7;
+
+    
+}
+
+.slidergallery{
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 0;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: solid 10px #2c2c2c ;
+}
+
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide_img img{
+    width: 100%;
+    height: 100%;
+}
+
+#i1, #i2, #i3{
+    display: none;
+}
+
+.pre, .nxt{
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.pre{
+    left: 0;
+}
+.nxt{
+    right: 0;
+}
+
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 12%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin-top: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+    z-index: 9;
+}
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+    background:#fff
+}
+
+.gorsel{
+    color: black;
+}
+
+
+
+/*Fotograflar tam boyut*/
+#fototam{
+    width: 1024px;
+    height: 768px;
+}
+
+#fototambut{
+    position:fixed;
+    margin-left: 1rem;
+    margin-top: 62rem;
+}
